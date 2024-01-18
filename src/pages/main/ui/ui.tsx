@@ -16,29 +16,63 @@ import newsImgBig2 from "@/shared/assets/images/newsImgBig2.png"
 import {NewsItem} from "@/shared/ui/newsItem";
 import {Footer} from "@/widgets/footer";
 
+import {animated, useSpring} from "@react-spring/web";
+
 export const Main = () => {
+    const animation = useSpring({
+        from: {
+            opacity: 0,
+            x: 100,
+        },
+        to: {
+            opacity: 1,
+            x: 0,
+        },
+        config:{duration:2000}
+    });
+
+    const animation2 = useSpring({
+        from: {
+            opacity: 0,
+            x: -100,
+        },
+        to: {
+            opacity: 1,
+            x: 0,
+        },
+        config:{duration:2000}
+    });
+
     return(
         <div className={styles.pageWrapper}>
             <div className={styles.titleBlockWrapper}>
                 <Header/>
                 <div className={styles.titleTextWrapper}>
-                    <div className={styles.titleWrapper}>
-                        <h1>ЭКСПОФОРУМ</h1>
-                        <span>конгрессно-выставочныф центр<br/>Санкт-Петербурга</span>
-                        <NavLink to="#">О комплексе &#8594;</NavLink>
-                    </div>
 
-                    <div className={styles.infosWrapper}>
-                        {infoItems.map(item =>
-                            <MenuItem key={item.id} {...item}/>
-                        )}
-                    </div>
+                <animated.div style={animation}>
+                        <div className={styles.titleWrapper}>
+                            <h1>
+                                ЭКСПОФОРУМ
+                            </h1>
+                            <span style={{width:"fit-content"}}>конгрессно-выставочныф центр<br/>Санкт-Петербурга</span>
+                            <NavLink to="#">О комплексе &#8594;</NavLink>
+                        </div>
+                </animated.div>
+
+                    <animated.div style={animation2}>
+                        <div className={styles.infosWrapper}>
+                            {infoItems.map(item =>
+                                <MenuItem key={item.id} {...item}/>
+                            )}
+                        </div>
+                    </animated.div>
                 </div>
             </div>
-            {/*тоже или виджет или шаред..*/}
+            {/*тоже или виджет или шаред..*/
+            }
             <div className={styles.sideMenuBlockWrapper}>
                 <div className={styles.sideMenuWrapper}>
-                    {SideMenuItems.map(item =>
+                {SideMenuItems.map(item =>
                         <SideMenuItem key={item.id} {...item}/>
                     )}
                 </div>

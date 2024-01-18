@@ -22,7 +22,6 @@
     justify-content: space-between;
 
     .titleWrapper{
-      width: 47%;
       height: fit-content;
 
       margin-top: 24vh;
@@ -55,8 +54,6 @@
     }
 
     .infosWrapper{
-      width: 50%;
-
       margin: 38vh 0 7vh 0;
       display: flex;
       flex-wrap: wrap;
@@ -109,6 +106,10 @@
         font-size: 21px;
         color: #2E373B;
         text-decoration: underline;
+
+        &:hover{
+          border-color: transparent;
+        }
       }
     }
 

@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
 
+  transition: 1s;
+
   span{
     font-family: CirceLight, sans-serif;
     color: #2E373B;
@@ -31,5 +33,11 @@
 
   .eventDescription{
     font-size: 16px;
+  }
+
+  &:hover{
+    cursor: pointer;
+
+    transform: scale(1.1);
   }
 }

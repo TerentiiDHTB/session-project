@@ -14,8 +14,17 @@
   }
 
   a{
+    width: fit-content;
+
     margin-bottom: 2vh;
 
     font-family: CirceThin, sans-serif;
+
+    border-bottom: 1px solid transparent;
+
+    &:hover{
+      color: #FFC41E;
+      border-color: #FFC41E;
+    }
   }
 }

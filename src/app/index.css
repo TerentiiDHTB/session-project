@@ -48,6 +48,16 @@ button:hover{
 }
 
 a{
+    width: fit-content;
+
     color: white;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+a:hover{
+    color: white;
+    border-color: white;
 }
