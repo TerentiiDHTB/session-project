@@ -1,0 +1,21 @@
+.itemWrapper{
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+
+  h2{
+    margin: 0 0 4vh 0;
+
+    font-size: 30px;
+    font-family: CirceRegular, sans-serif;
+  }
+
+  a{
+    margin-bottom: 2vh;
+
+    font-family: CirceThin, sans-serif;
+  }
+}

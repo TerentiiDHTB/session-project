@@ -1,0 +1,33 @@
+.headerWrapper{
+  height: 11.25vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: CirceThin, sans-serif;
+
+  border-bottom: 1px solid white;
+
+  .logoImg{
+    margin-left: 9.4vw;
+  }
+
+  .link{
+    margin-right: 2.5vw;
+  }
+
+  .featuresBlock{
+    margin-right: 9.4vw;
+
+    .searchButton{
+      margin-right: 4vw;
+    }
+
+    button{
+      color: white;
+      font-family: CirceThin, sans-serif;
+    }
+  }
+}
