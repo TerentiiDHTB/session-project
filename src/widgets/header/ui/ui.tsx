@@ -4,21 +4,8 @@ import {NavLink} from "react-router-dom";
 
 import logo from "@/shared/assets/images/logo 1.svg"
 
-import {animated, useSpring} from "@react-spring/web";
-
 export const Header = () => {
-    const animation =  useSpring({
-        from: {
-            opacity: 0,
-        },
-        to: {
-            opacity: 1,
-        },
-        config:{duration:2000}
-    });
-
     return (
-        <animated.div style={animation}>
             <div className={styles.headerWrapper}>
                 <img src={logo} alt={"logoimg"} className={styles.logoImg}/>
 
@@ -35,6 +22,5 @@ export const Header = () => {
                     <button>&#127760; English</button>
                 </div>
             </div>
-        </animated.div>
     )
 }

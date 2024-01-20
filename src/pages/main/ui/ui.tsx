@@ -16,7 +16,7 @@ import newsImgBig2 from "@/shared/assets/images/newsImgBig2.png"
 import {NewsItem} from "@/shared/ui/newsItem";
 import {Footer} from "@/widgets/footer";
 
-import {animated, useSpring} from "@react-spring/web";
+import {animated, useSpring, config} from "@react-spring/web";
 
 export const Main = () => {
     const animation = useSpring({
@@ -28,7 +28,7 @@ export const Main = () => {
             opacity: 1,
             x: 0,
         },
-        config:{duration:2000}
+        config:config.slow
     });
 
     const animation2 = useSpring({
@@ -40,7 +40,7 @@ export const Main = () => {
             opacity: 1,
             x: 0,
         },
-        config:{duration:2000}
+        config:config.slow
     });
 
     return(
