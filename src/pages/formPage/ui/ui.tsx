@@ -47,7 +47,7 @@ export const FormPage = () => {
                             firstName: "",
                             lastName: "",
                             email: "",
-                            event: ""
+                            event: "Ekspo1"
                         }
                     }
                     validate={validate}

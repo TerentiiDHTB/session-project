@@ -62,20 +62,22 @@
         margin: 0 1.5vw 1.5vw auto;
       }
     }
+  }
 
-    @media screen and (max-width: 1100px){
+  @media screen and (max-width: 1200px){
+    .titleTextWrapper{
       .infosWrapper{
         margin: 38vh 0 7vh 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        div {
-          margin: 0 0 1.5vw 0;
+        div{
+          margin: 0 0 1.5vh 0;
         }
 
         div:nth-child(odd){
-          margin: 0 0 1.5vw 0;
+          margin: 0 0 1.5vh 0;
         }
       }
     }
@@ -173,6 +175,16 @@
       }
     }
 
+    @media screen and (max-width: 992px) {
+      .newsTextBlockWrapper{
+        overflow-y: scroll;
+      }
+
+      *{
+        margin-bottom: 1.5vh;
+      }
+    }
+    
     .newsTextBlockWrapper{
       width: 48%;
       height: 100%;
